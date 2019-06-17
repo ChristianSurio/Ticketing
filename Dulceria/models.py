@@ -5,7 +5,7 @@ import datetime
 class Dulceria(models.Model):
     """(Dulceria description)"""
     nombre = models.CharField(blank=True, max_length=100)
-    logo = models.ImageField(blank=True, null=True,upload_to="imagenes/", height_field=400, width_field=400)
+    logo = models.ImageField(blank=True, null=True,upload_to="imagenes/")
     eslogan = models.CharField(blank=True, max_length=100)
 
     def __str__(self):
